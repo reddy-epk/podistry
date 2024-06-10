@@ -1,3 +1,4 @@
+/*
 import React from 'react'
 import {Routes, Route} from 'react-router-dom'
 import Home from './components/Home'
@@ -10,14 +11,23 @@ import WidgetConfig from './components/WidgetConfig'
 const App = () => {
   return (
     <Routes>
-      <Route path='/' element={<Home />} />
-      <Route path='/projects' element={<Projects />} />
-      <Route path='/project-flow' element={<ProjectFlowLayout />} />
-      <Route path='/project' element={<RouteProject />} />
-      <Route path='/widget-configuration' element={<WidgetConfig />} />
-      <Route path='/settings' element={<Settings />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/projects" element={<Projects />} />
+      <Route path="/project-flow" element={<ProjectFlowLayout />} />
+      <Route path="/project" element={<RouteProject />} />
+      <Route path="/widget-configuration" element={<WidgetConfig />} />
+      <Route path="/settings" element={<Settings />} />
     </Routes>
   )
+}
+
+export default App
+
+*/
+
+import Dummy from './components/Dummy'
+const App = () => {
+  return <Dummy />
 }
 
 export default App

@@ -50,14 +50,14 @@ const HomeContent = () => {
   }
 
   return (
-    <div id='create-the-podcast'>
-      <h1 className='podcast-head1'>Create a New PodCast</h1>
+    <div id="create-the-podcast">
+      <h1 className="podcast-head1">Create a New PodCast</h1>
       <img
-        src='https://res.cloudinary.com/dqfqwre2q/image/upload/v1717916335/pavandiscussions.png'
-        alt='dissussions'
-        className='podcast-image'
+        src="https://res.cloudinary.com/dqfqwre2q/image/upload/v1717916335/pavandiscussions.png"
+        alt="dissussions"
+        className="podcast-image"
       />
-      <p id='podcast-para'>
+      <p id="podcast-para">
         Podcasts offer a world of on-demand audio entertainment, with shows on
         every topic imaginable. Whether you're into true crime, deep dives into
         science, or just a good laugh, there's a <br /> podcast out there for
@@ -65,8 +65,8 @@ const HomeContent = () => {
         <br /> vast world, all from the comfort of your web browser.
         <br /> Tune in and discover something new!
       </p>
-      <button type='button' id='podcast-button' onClick={openModal}>
-        <FaPodcast className='podcast-icon' />
+      <button type="button" id="podcast-button" onClick={openModal}>
+        <FaPodcast className="podcast-icon" />
         <span>Create a New PodCast</span>
       </button>
       <Modal
@@ -75,14 +75,14 @@ const HomeContent = () => {
         onAfterOpen={afterOpenModal}
         style={customStyles}
       >
-        <div id='on_pop_up'>
+        <div id="on_pop_up">
           <h2>Create Podcast</h2>
-          <label htmlFor='projectName'>Enter Project Name:</label>
+          <label htmlFor="projectName">Enter Project Name:</label>
           <input
-            type='text'
-            id='projectName'
-            className='projectName'
-            placeholder='Type Here'
+            type="text"
+            id="projectName"
+            className="projectName"
+            placeholder="Type Here"
             value={projectName}
             onChange={e => setProjectName(e.target.value)}
           />
@@ -91,11 +91,11 @@ const HomeContent = () => {
               {errorMessage}
             </p>
           )}
-          <div id='buttons-classified'>
-            <button onClick={closeModal} className='cancel' type='button'>
+          <div id="buttons-classified">
+            <button onClick={closeModal} className="cancel" type="button">
               Cancel
             </button>
-            <button onClick={handleCreate} id='create' type='button'>
+            <button onClick={handleCreate} id="create" type="button">
               Create
             </button>
           </div>

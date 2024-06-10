@@ -1,0 +1,181 @@
+#nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#route-icons {
+  display: flex;
+  align-items: center;
+  width: 200px;
+}
+#country-icons {
+  display: flex;
+  align-items: center;
+  width: 145px;
+}
+.rowy {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+.fabell {
+  font-size: 23px;
+  font-weight: bolder;
+  margin-left: 15px;
+}
+.main-bar {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #fff;
+  margin-left: 210px;
+}
+
+.project-flow-layout {
+  display: flex;
+  height: 100vh;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.slashbar {
+  color: #999999;
+  font-size: 18px;
+}
+.sample-text {
+  color: #999999;
+  font-size: 16px;
+  font-weight: 500;
+}
+.home-icone {
+  color: #7e22ce;
+  font-weight: bold;
+  font-size: 18px;
+}
+.upload-text {
+  color: #7e22ce;
+  font-size: 30px;
+}
+
+.save-button {
+  background-color: transparent;
+  border: 2px solid #7e22ce;
+  border-radius: 15px;
+  color: #7e22ce;
+  height: 35px;
+  width: 80px;
+}
+
+.marginer {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.divide-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.lower-banner {
+  border: 4px dotted #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.projects-list-container {
+  width: 280px;
+  height: 110px;
+  background-color: #fff;
+  border-radius: 7px;
+  border: 2px solid green;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.card-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #f3e8ff;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  position: fixed; /* Add position: fixed to make the sidebar stay fixed */
+  height: 100vh; /* Add height: 100vh to make the sidebar cover the full height of the viewport */
+}
+
+.main-content {
+  margin-left: 240px; /* Add margin-left to create space for the fixed sidebar */
+  padding: 20px;
+  background-color: #fff;
+  overflow-y: auto;
+}
+.project-flow-layout {
+  display: flex;
+  height: 100vh;
+}
+/*
+.sidebar {
+  width: 225px;
+  background-color: #f3e8ff;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; 
+} */
+
+.sidebar-top {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px; /* Add padding-bottom to create space for the settings button */
+}
+
+.circle-button {
+  text-decoration: none;
+  color: #211935;
+  display: inline-flex;
+  align-items: center;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.circle-button:hover .circle {
+  background-color: #211935;
+  color: white;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  background-color: #d8c4ef;
+  border-radius: 50%;
+  color: #3c3c3c;
+  font-weight: bold;
+  text-align: center;
+  line-height: 20px;
+  margin-right: 5px;
+}
+
+.circle-button:hover {
+  background-color: #7e22ce;
+  color: white;
+  border-radius: 12px;
+}

@@ -15,25 +15,25 @@ const Projects = () => {
   return (
     <>
       <Header />
-      <div className='main-container'>
-        <div className='projects-container'>
+      <div className="main-container">
+        <div className="projects-container">
           <h1>Projects</h1>
-          <button type='button' id='podcasty-button'>
-            <FaPodcast className='podcasty-icon' />
+          <button type="button" id="podcasty-button">
+            <FaPodcast className="podcasty-icon" />
             <span>Create a New PodCast</span>
           </button>
         </div>
-        <div className='projects-list-container'>
+        <div className="projects-list-container">
           {projectNames.map((name, index) => (
             <div
               key={index}
-              className='card'
+              className="card"
               onClick={handleCardClick} // Add onClick event handler to the card
             >
-              <div className='card-image'></div>
-              <div className='card-content'>
+              <div className="card-image"></div>
+              <div className="card-content">
                 <div>
-                  <h3 className='card-title'>{name}</h3>
+                  <h3 className="card-title">{name}</h3>
                 </div>
                 <p>{new Date().toLocaleString()}</p>
               </div>

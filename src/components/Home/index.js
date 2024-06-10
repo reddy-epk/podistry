@@ -5,7 +5,7 @@ import Header from '../HeaderL'
 class Home extends Component {
   render() {
     return (
-      <div className='homejs'>
+      <div className="homejs">
         <Header />
         <HomeContent />
       </div>
