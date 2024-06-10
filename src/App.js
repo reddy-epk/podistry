@@ -25,9 +25,9 @@ export default App
 
 */
 
-import Dummy from './components/Dummy'
+import Creater from './components/Dummy/creater'
 const App = () => {
-  return <Dummy />
+  return <Creater />
 }
 
 export default App

@@ -1,3 +1,17 @@
+.active {
+  background-color: red;
+  color: green;
+}
+.lama-svg {
+  display: flex;
+  align-items: center;
+}
+.lama-head{
+  color: #7e22ce;
+  font-family: Garamond;
+  font-size: 24px;
+}
+
 #nav-bar {
   display: flex;
   align-items: center;
@@ -22,12 +36,6 @@
   font-size: 23px;
   font-weight: bolder;
   margin-left: 15px;
-}
-.main-bar {
-  flex-grow: 1;
-  padding: 20px;
-  background-color: #fff;
-  margin-left: 210px;
 }
 
 .project-flow-layout {
@@ -110,7 +118,7 @@
 }
 
 .sidebar {
-  width: 200px;
+  width: 220px;
   background-color: #f3e8ff;
   display: flex;
   flex-direction: column;
@@ -120,11 +128,19 @@
 }
 
 .main-content {
-  margin-left: 240px; /* Add margin-left to create space for the fixed sidebar */
+  margin-left: 100px; /* Add margin-left to create space for the fixed sidebar */
   padding: 20px;
   background-color: #fff;
   overflow-y: auto;
 }
+/*
+.main-bar {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #fff;
+  margin-left: 210px;
+}
+*/
 .project-flow-layout {
   display: flex;
   height: 100vh;

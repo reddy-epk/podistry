@@ -1,7 +1,9 @@
+import React from 'react'
 import {Link} from 'react-router-dom'
 import {IoSettingsOutline} from 'react-icons/io5'
 import './index.css'
-const Sidebar = () => {
+
+const Sidebar = ({selectedOption, handleOptionClick}) => {
   return (
     <div className="sidebar">
       <div className="lama-svg">
@@ -15,10 +17,22 @@ const Sidebar = () => {
       </div>
       <p>Podcast Update Flow</p>
       <div className="sidebar-top">
-        <Link to="/project" className="circle-button">
+        <Link
+          to="/project"
+          className={`circle-button ${
+            selectedOption === 'projects' ? 'active' : ''
+          }`}
+          onClick={() => handleOptionClick('projects')}
+        >
           <span className="circle">1</span> Project
         </Link>
-        <Link to="/widget-configuration" className="circle-button">
+        <Link
+          to="/widget-configuration"
+          className={`circle-button ${
+            selectedOption === 'widget-configuration' ? 'active' : ''
+          }`}
+          onClick={() => handleOptionClick('widget-configuration')}
+        >
           <span className="circle">2</span> Widget Configuration
         </Link>
         <button className="circle-button">
@@ -30,10 +44,17 @@ const Sidebar = () => {
         <hr />
       </div>
       <hr />
-      <Link to="/settings" className="circle-button setting-button">
-        <IoSettingsOutline />
-        <span className="spacer">Settings</span>
-      </Link>
+      <button
+        className={`circle-button ${
+          selectedOption === 'pricing' ? 'active' : ''
+        }`}
+        onClick={() => handleOptionClick('settings')}
+      >
+        <Link to="/settings" className="circle-button setting-button">
+          <IoSettingsOutline />
+          <span className="spacer">Settings</span>
+        </Link>
+      </button>
     </div>
   )
 }
