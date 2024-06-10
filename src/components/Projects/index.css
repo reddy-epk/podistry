@@ -1,0 +1,87 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  justify-content: center;
+  margin-left: 30px;
+}
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.podcasty-icon {
+  font-size: 30px;
+  margin-right: 5px;
+}
+#podcasty-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  border-width: 1px;
+  background-color: #211935;
+  border-color: transparent;
+  color: aliceblue;
+  height: 30px;
+}
+.projects-list-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 300px;
+  height: 110px;
+  background-color: #fff;
+  border-radius: 7px;
+  border: 2px solid green;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card-image {
+  width: 75px;
+  height: 75px;
+  background-color: orange;
+  overflow: hidden;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card:nth-child(2n) .card-image {
+  background-color: #7e22ce;
+}
+.card-content {
+  padding: 20px;
+  text-align: start;
+}
+.height-adjust {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #888;
+  margin-top: 0px;
+  padding-top: 0px;
+}

@@ -1,0 +1,61 @@
+.project-flow-layout {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #f3e8ff;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #7e22ce;
+  overflow-y: auto; /* Add overflow-y: auto to enable scrolling if needed */
+}
+
+.sidebar-top {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px; /* Add padding-bottom to create space for the settings button */
+}
+
+.circle-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.circle-button:hover .circle {
+  background-color: #211935;
+  color: white;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  background-color: #d8c4ef;
+  border-radius: 50%;
+  color: #3c3c3c;
+  font-weight: bold;
+  text-align: center;
+  line-height: 20px;
+  margin-right: 5px;
+}
+
+.circle-button:hover {
+  background-color: #7e22ce;
+  color: white;
+  border-radius: 12px;
+}
+
+.main-bar {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #fff;
+  margin-left: 200px; /* Add margin-left to create space for the fixed sidebar */
+  overflow-y: auto; /* Add overflow-y: auto to enable scrolling if needed */
+}

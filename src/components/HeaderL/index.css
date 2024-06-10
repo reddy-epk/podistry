@@ -1,0 +1,77 @@
+.lama-svg {
+  display: flex;
+  flex-direction: row;
+  width: 100px;
+  align-items: center;
+  margin-left: 18px;
+}
+.lama-head {
+  font-family: Arial;
+  font-size: 16px;
+  color: #7e22ce;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  padding: 10px;
+  margin-left: 50px;
+  background-color: transparent;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.header-left img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+#header-right {
+  width: 90px;
+  height: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.home-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border-radius: 8px;
+  border-width: 1px;
+  background-color: transparent;
+  border-color: #999999;
+}
+.home-icon {
+  margin-left: 2px;
+  margin-right: 3px;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+}
+.bach-to {
+  font-size: 16px;
+}
+.settings-icon {
+  font-size: 24px;
+  color: #3c3c3c;
+  font-weight: bold;
+}
+
+.bell-icon {
+  font-size: 24px;
+  color: #3c3c3c;
+  font-weight: bold;
+}
