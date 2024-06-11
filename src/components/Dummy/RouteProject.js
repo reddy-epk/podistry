@@ -7,8 +7,9 @@ import './index.css'
 
 const customStyles = {
   content: {
-    height: '34%',
-    width: '50%',
+    height: '59%',
+    width: '82%',
+    padding: '10px',
     top: '50%',
     left: '50%',
     right: 'auto',
@@ -16,6 +17,8 @@ const customStyles = {
     borderRadius: '8px',
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
+    border: '2px dashed #7e22ce',
+    overflowY: 'hidden',
   },
 }
 
@@ -232,30 +235,36 @@ const RouteProject = () => {
         style={customStyles}
         contentLabel="Podcast Details"
       >
-        <h2>Create Podcast</h2>
+        <div className="lastify">
+          <h2>Edit Transcript:</h2>
+          <div className="save-cancel">
+            <button onClick={closeModal} id="cancel">
+              Cancel
+            </button>
+            <button onClick={handleSaveClick} id="save">
+              Save & exit
+            </button>
+          </div>
+        </div>
         <div className="modal-css">
           <label htmlFor="podcastName">Podcast Name:</label>
           <input
             type="text"
             id="podcastName"
+            className="pod-reduce"
             value={podcastName}
             onChange={handlePodcastNameChange}
           />
-          <label htmlFor="podcastDetails">Podcast Details:</label>
+          <label htmlFor="podcastDetails" className="cast-marginer">
+            Podcast Details:
+          </label>
           <textarea
             id="podcastDetails"
             value={podcastDetails}
             onChange={handlePodcastDetailsChange}
-            rows="4"
+            rows="15"
           ></textarea>
-          <div className="save-cancel">
-            <button onClick={handleSaveClick} id="save">
-              Save
-            </button>
-            <button onClick={closeModal} id="cancel">
-              Cancel
-            </button>
-          </div>
+
           {/*<hr className="hr-line" />*/}
         </div>
       </Modal>

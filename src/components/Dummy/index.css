@@ -1,3 +1,53 @@
+.pod-reduce {
+  width: max-content;
+}
+.cast-marginer {
+  margin-top: 6px;
+}
+.lastify {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.save-cancel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 13px;
+}
+#save {
+  background-color: #211935;
+  color: white;
+  border: none;
+  padding: 5px 7px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: 5px;
+  width: 100px;
+  height: 30px;
+}
+#cancel {
+  background-color: transparent;
+  border: 1px solid red;
+  color: red;
+  padding: 5px 7px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100px;
+  height: 30px;
+}
+
 .edit-delete-buttons {
   display: flex;
   flex-direction: row;
@@ -98,39 +148,6 @@
 
 .list-item button {
   margin-left: 10px;
-}
-
-.save-cancel {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-  margin-top: 13px;
-}
-#save {
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  padding: 5px 7px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin-right: 10px;
-  cursor: pointer;
-  border-radius: 4px;
-}
-#cancel {
-  background-color: #f44336;
-  color: white;
-  border: none;
-  padding: 5px 7px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 4px;
 }
 
 .modal-css {
