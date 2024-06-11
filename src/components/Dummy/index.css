@@ -1,3 +1,143 @@
+.edit-delete-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.edit-button,
+.delete-button {
+  align-items: center;
+  text-align: center;
+  align-self: center;
+  width: 70px;
+  height: 30px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-button {
+  background-color: #4caf50; /* Green */
+  color: white;
+}
+
+.delete-button {
+  background-color: #f44336; /* Red */
+  color: white;
+}
+
+.divider {
+  flex: 0 0 1px;
+  background-color: #ddd;
+  height: 20px;
+  margin: 0 10px;
+}
+
+.intial-space {
+  margin-left: 40px;
+}
+.status-space {
+  margin-left: 15px;
+}
+#action-space {
+  margin-left: 30px;
+  margin-right: 0px;
+}
+.if-content {
+  border: 2px dashed red;
+  border-radius: 8px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+  width: 85%;
+  align-self: center;
+}
+.list-item:after {
+  content: '';
+  position: absolute;
+  width: 100%; /* Span the entire width of the element */
+  height: 1px;
+  bottom: 1px;
+  background-color: #ccc; /* Match border color */
+  left: 0; /* Align to the left edge */
+}
+
+.list-item:last-child:after {
+  /* Hide the line for the last item */
+  display: none;
+}
+
+.list-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.list-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.list-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.list-item p {
+  margin-right: 10px;
+}
+
+.list-item button {
+  margin-left: 10px;
+}
+
+.save-cancel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 13px;
+}
+#save {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 5px 7px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+#cancel {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 7px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.modal-css {
+  display: flex;
+  flex-direction: column;
+}
+
 .active {
   background-color: red;
   color: green;
@@ -6,7 +146,7 @@
   display: flex;
   align-items: center;
 }
-.lama-head{
+.lama-head {
   color: #7e22ce;
   font-family: Garamond;
   font-size: 24px;
@@ -77,8 +217,11 @@
 }
 
 .marginer {
-  margin-bottom: 30px;
-  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
 }
 
 .divide-banner {
@@ -91,6 +234,7 @@
   border: 4px dotted #ccc;
   padding: 20px;
   text-align: center;
+  border-radius: 8px;
 }
 
 .cards-container {
