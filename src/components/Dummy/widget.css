@@ -1,3 +1,16 @@
+.first-container-cols {
+  display: flex;
+  flex-direction: column;
+  color: red;
+}
+.oneIn {
+  height: 45px;
+}
+.twoIn {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .matryfy {
   margin-left: 120px;
 }
@@ -6,7 +19,7 @@
   font-size: 16px;
   font-weight: 500;
 }
-.samext{
+.samext {
   color: #7e22ce;
 }
 .dropden {
@@ -47,10 +60,10 @@
   margin-left: 15px;
 }
 
-#heroku {
-  height: 5px;
-  border: none;
-  background-color: red;
+.heroku {
+  border-top: 2px solid #ddd; /* Adjust thickness and color */
+  width: 100%; /* Adjust width as needed */
+  margin: 10px 0;
 }
 
 #route-icons {

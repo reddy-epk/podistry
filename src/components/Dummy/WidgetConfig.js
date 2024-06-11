@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
 import {Component} from 'react'
+
+import Desplay from './Desplay.js'
 import {IoHomeOutline} from 'react-icons/io5'
 import {MdArrowDropDown} from 'react-icons/md'
 import {FaRegBell} from 'react-icons/fa'
@@ -30,6 +32,29 @@ class General extends Component {
           />
           <FaRegBell className="fabel" />
         </div>
+      </div>
+    )
+  }
+}
+
+class FirstRender extends Component {
+  render() {
+    return (
+      <div className="first-container-cols">
+        <label htmlFor="one" className="twoIn">
+          One:
+        </label>
+        <input type="text" id="one" className="oneIn" />
+        <br />
+        <label htmlFor="two" className="twoIn">
+          Two:
+        </label>
+        <input type="text" id="two" className="oneIn" />
+        <br />
+        <label htmlFor="three" className="twoIn">
+          Three:
+        </label>
+        <input type="text" id="three" className="oneIn" />
       </div>
     )
   }
@@ -77,10 +102,10 @@ const WidgetConfig = () => {
           Advanced
         </button>
       </div>
-      <hr id="heroku" />
+      <div className="heroku"></div>
       <div>
-        {activeTab === 'general' && <h1>pk</h1>}
-        {activeTab === 'display' && <h2>Display Content</h2>}
+        {activeTab === 'general' && <FirstRender />}
+        {activeTab === 'display' && <Desplay />}
         {activeTab === 'advanced' && <h2>Advanced Content</h2>}
       </div>
     </div>

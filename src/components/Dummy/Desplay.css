@@ -1,0 +1,142 @@
+.horizontal-line {
+  border-top: 2px solid #ddd; /* Adjust thickness and color */
+  width: 100%; /* Adjust width as needed */
+  margin: 10px 0; /* Add spacing above and below (optional) */
+}
+.no-name {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+}
+
+#slicer {
+  height: 5px;
+  border: none;
+  background-color: green;
+}
+
+#heroku {
+  height: 5px;
+  border: none;
+  background-color: red;
+}
+
+.tester {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.setting-row1 {
+  margin-left: 100px;
+}
+.setting-row2 {
+  margin-left: 400px;
+}
+.setting-row3 {
+  margin-left: 100px;
+}
+.setting-row4 {
+  margin-left: 335px;
+}
+.setting-row5 {
+  margin-right: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.setting-row6 {
+  margin-left: 100px;
+}
+.setting-row7 {
+  margin-left: 385px;
+}
+.setting-row8 {
+  margin-left: 100px;
+}
+.setting-row9 {
+  margin-left: 300px;
+}
+
+.desplay-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 8px;
+}
+
+.containers-creation {
+  display: flex;
+  align-items: center;
+}
+
+.setting-label {
+  flex: 0 0 200px;
+  font-weight: bold;
+}
+.fonted {
+  margin-bottom: 0px;
+}
+.fonteds {
+  margin-top: 15px;
+}
+.color-preview {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.setting-description {
+  flex: 1;
+  color: #d9d9d9;
+  font-size: 16px;
+  font-family: roboto;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #9b59b6;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20);
+}
