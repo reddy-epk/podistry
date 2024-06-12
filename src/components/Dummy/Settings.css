@@ -66,7 +66,7 @@
 
 .contentify {
   background: linear-gradient(to right, #020024, #750979, #00d4ff);
-  -webkit-background-clip: text; /* For webkit browsers (Chrome and Safari) */
+  -webkit-background-clip: text; /* deploed for font gradient webkit  */
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -133,7 +133,7 @@
 .image-container {
   display: flex;
   flex-direction: column;
-  width: 80%; /* Assuming the width of the image is 208px based on your description */
+  width: 80%;
   border: none;
   padding: 10px;
   border-radius: 5px;

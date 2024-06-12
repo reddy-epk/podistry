@@ -66,8 +66,8 @@
 }
 
 .heroku {
-  border-top: 2px solid #ddd; /* Adjust thickness and color */
-  width: 100%; /* Adjust width as needed */
+  border-top: 2px solid #ddd;
+  width: 100%;
   margin: 10px 0;
 }
 
@@ -109,7 +109,7 @@
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: blue; /* Change this to the desired color */
+  background-color: blue;
   transform: scaleX(0);
   transition: transform 0.3s ease-in-out;
 }
@@ -120,18 +120,18 @@
 }
 
 .button:focus {
-  outline: none; /* Add this line to remove the default focus outline */
+  outline: none;
 }
 
 .button.active-tab {
-  text-decoration: none; /* Remove the underline for the active tab */
+  text-decoration: none;
 }
 
 .button.active-tab::after {
-  display: none; /* Hide the underline for the active tab */
+  display: none;
 }
 .button.active-tab::after,
 .button.active-tab:first-child::after {
-  background-color: blue; /* Change this to the desired color */
+  background-color: blue;
   transform: scaleX(1);
 }

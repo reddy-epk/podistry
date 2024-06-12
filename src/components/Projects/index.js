@@ -11,6 +11,9 @@ const Projects = () => {
   const handleCardClick = () => {
     navigate('/creater')
   }
+  const handleHomeClick = () => {
+    navigate('/')
+  }
 
   return (
     <>
@@ -18,12 +21,12 @@ const Projects = () => {
       <div className="main-container">
         <div className="projects-container">
           <h1>Projects</h1>
-          <button type="button" id="podcasty-button">
+          <button type="button" id="podcasty-button" onClick={handleHomeClick}>
             <FaPodcast className="podcasty-icon" />
             <span>Create a New PodCast</span>
           </button>
         </div>
-        <div className="projects-list-container">
+        <div id="projects-list-container">
           {projectNames.map((name, index) => (
             <div key={index} className="card" onClick={handleCardClick}>
               <div className="card-image"></div>

@@ -1,9 +1,14 @@
 import React from 'react'
+import {useNavigate} from 'react-router-dom'
 import {IoHomeOutline, IoSettingsOutline} from 'react-icons/io5'
 import {FaRegBell} from 'react-icons/fa'
 import './index.css'
 
 const Header = () => {
+  const navigate = useNavigate()
+  const handleHomeClick = () => {
+    navigate('/')
+  }
   return (
     <div>
       <div className="lama-svg">
@@ -18,7 +23,7 @@ const Header = () => {
 
       <header className="header">
         <div className="header-left">
-          <button className="home-button">
+          <button className="home-button" onClick={handleHomeClick}>
             <IoHomeOutline className="home-icon" />
             <span className="bach-to">Back to Home</span>
           </button>

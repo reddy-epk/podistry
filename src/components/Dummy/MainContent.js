@@ -2,16 +2,25 @@ import React from 'react'
 import RouteProject from './RouteProject'
 import Settings from './Settings'
 import WidgetConfig from './WidgetConfig'
-import './index.css'
 
 const MainContent = ({selectedOption}) => {
-  return (
-    <div className="main-content">
-      {selectedOption === 'projects' && <RouteProject />}
-      {selectedOption === 'widget-configuration' && <WidgetConfig />}
-      {selectedOption === 'settings' && <Settings />}
-    </div>
-  )
+  let content = null
+
+  switch (selectedOption) {
+    case 'projects':
+      content = <RouteProject />
+      break
+    case 'settings':
+      content = <Settings />
+      break
+    case 'widget-configuration':
+      content = <WidgetConfig />
+      break
+    default:
+      content = null
+  }
+
+  return <div className="main-content">{content}</div>
 }
 
 export default MainContent

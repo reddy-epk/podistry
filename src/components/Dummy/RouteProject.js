@@ -173,25 +173,26 @@ const RouteProject = () => {
               </div>
             </div>
           </div>
-          <div className="marginer">
-            <p>or</p>
-          </div>
+          <div className="marginer"></div>
           {podcasts.length === 0 ? (
-            <div className="lower-banner">
-              <div>
-                <img
-                  src="https://res.cloudinary.com/dqfqwre2q/image/upload/v1718014009/cloud_upload_fcznzr.png"
-                  width="70"
-                  height="70"
-                  alt="uploadfeed"
-                />
-                <p>
-                  Select a file or drag and drop here (Podcast Media or
-                  Transcription Text):
-                  <br />
-                  MP4, MOV, MP3, WAV, PDF, DOCX or TXT file
-                </p>
-                <button className="save-button">Select File</button>
+            <div>
+              <p id="under-center">or</p>
+              <div className="lower-banner">
+                <div>
+                  <img
+                    src="https://res.cloudinary.com/dqfqwre2q/image/upload/v1718014009/cloud_upload_fcznzr.png"
+                    width="70"
+                    height="70"
+                    alt="uploadfeed"
+                  />
+                  <p>
+                    Select a file or drag and drop here (Podcast Media or
+                    Transcription Text):
+                    <br />
+                    MP4, MOV, MP3, WAV, PDF, DOCX or TXT file
+                  </p>
+                  <button className="save-button">Select File</button>
+                </div>
               </div>
             </div>
           ) : (
@@ -202,7 +203,7 @@ const RouteProject = () => {
                 <p className="status-space">Status</p>
                 <p id="action-space">Actions</p>
               </div>
-              {/*<hr className="hr-line" />*/}
+
               {podcasts.map((podcast, index) => (
                 <div key={index} className="list-item">
                   <p className="intial-space">{podcast.name}</p>
@@ -264,8 +265,6 @@ const RouteProject = () => {
             onChange={handlePodcastDetailsChange}
             rows="15"
           ></textarea>
-
-          {/*<hr className="hr-line" />*/}
         </div>
       </Modal>
     </div>

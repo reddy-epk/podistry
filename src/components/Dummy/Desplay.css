@@ -1,7 +1,7 @@
 .horizontal-line {
-  border-top: 2px solid #ddd; /* Adjust thickness and color */
-  width: 100%; /* Adjust width as needed */
-  margin: 10px 0; /* Add spacing above and below (optional) */
+  border-top: 2px solid #ddd;
+  width: 100%;
+  margin: 10px 0;
 }
 .no-name {
   height: 50px;

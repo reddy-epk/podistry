@@ -1,5 +1,4 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
 import {IoSettingsOutline} from 'react-icons/io5'
 import './index.css'
 
@@ -17,24 +16,22 @@ const Sidebar = ({selectedOption, handleOptionClick}) => {
       </div>
       <p id="p-flow">Podcast Update Flow</p>
       <div className="sidebar-top">
-        <Link
-          to="/project"
+        <button
           className={`circle-button ${
             selectedOption === 'projects' ? 'active' : ''
           }`}
           onClick={() => handleOptionClick('projects')}
         >
           <span className="circle">1</span> Project
-        </Link>
-        <Link
-          to="/widget-configuration"
+        </button>
+        <button
           className={`circle-button ${
             selectedOption === 'widget-configuration' ? 'active' : ''
           }`}
           onClick={() => handleOptionClick('widget-configuration')}
         >
           <span className="circle">2</span> Widget Configuration
-        </Link>
+        </button>
         <button className="circle-button">
           <span className="circle">3</span> Deployment
         </button>
@@ -46,14 +43,14 @@ const Sidebar = ({selectedOption, handleOptionClick}) => {
       <hr />
       <button
         className={`spacer-button ${
-          selectedOption === 'pricing' ? 'active' : ''
+          selectedOption === 'settings' ? 'active' : ''
         }`}
         onClick={() => handleOptionClick('settings')}
       >
-        <Link to="/settings" className="circle-button setting-button">
+        <div className="circle-button setting-button">
           <IoSettingsOutline id="on-setHover" />
           <span>Settings</span>
-        </Link>
+        </div>
       </button>
     </div>
   )

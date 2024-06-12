@@ -2,9 +2,14 @@
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  padding-bottom: 20px; /* Add padding-bottom to create space for the settings button */
+  padding-bottom: 20px;
 }
-
+#under-center {
+  text-align: center;
+}
+.home-button {
+  cursor: pointer;
+}
 .circle-button {
   text-decoration: none;
   color: #211935;
@@ -146,12 +151,12 @@
 }
 
 .edit-button {
-  background-color: #4caf50; /* Green */
+  background-color: #4caf50;
   color: white;
 }
 
 .delete-button {
-  background-color: #f44336; /* Red */
+  background-color: #f44336;
   color: white;
 }
 
@@ -187,15 +192,14 @@
 .list-item:after {
   content: '';
   position: absolute;
-  width: 100%; /* Span the entire width of the element */
+  width: 100%;
   height: 1px;
   bottom: 1px;
-  background-color: #ccc; /* Match border color */
-  left: 0; /* Align to the left edge */
+  background-color: #ccc;
+  left: 0;
 }
 
 .list-item:last-child:after {
-  /* Hide the line for the last item */
   display: none;
 }
 
@@ -256,6 +260,7 @@
   align-items: center;
   width: 200px;
 }
+
 #country-icons {
   display: flex;
   align-items: center;
@@ -295,6 +300,9 @@
   color: #7e22ce;
   font-weight: bold;
   font-size: 18px;
+}
+.home-icone:hover {
+  color: #4caf50;
 }
 .upload-text {
   color: #7e22ce;
@@ -361,33 +369,18 @@
   display: flex;
   flex-direction: column;
   overflow-y: hidden;
-  position: fixed; /* Add position: fixed to make the sidebar stay fixed */
-  height: 100%; /* Add height: 100vh to make the sidebar cover the full height of the viewport */
+  position: fixed;
+  height: 100%;
 }
 
 .main-content {
-  margin-left: 100px; /* Add margin-left to create space for the fixed sidebar */
+  margin-left: 100px;
   padding: 20px;
   background-color: #fff;
   overflow-y: auto;
 }
-/*
-.main-bar {
-  flex-grow: 1;
-  padding: 20px;
-  background-color: #fff;
-  margin-left: 210px;
-}
-*/
+
 .project-flow-layout {
   display: flex;
   height: 100vh;
 }
-/*
-.sidebar {
-  width: 225px;
-  background-color: #f3e8ff;
-  display: flex;
-  flex-direction: column;
-  overflow-y: auto; 
-} */

@@ -23,19 +23,20 @@
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  margin: 14px;
   padding: 8px;
   border-radius: 8px;
   border-width: 1px;
   background-color: #211935;
   border-color: transparent;
   color: aliceblue;
-  height: 30px;
+  height: 40px;
 }
-.projects-list-container {
+#projects-list-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: red;
+  justify-content: space-around;
 }
 
 .card {
