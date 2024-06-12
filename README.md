@@ -4,7 +4,7 @@ Building a  React **Podsify** (podcast Application)
 
 <br/>
 <div style="text-align: center;">
-<img src="https://res.cloudinary.com/dqfqwre2q/video/upload/v1718217428/podsify.gif" alt="feedback-large-output" style="max-width:70%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
+<img src="https://res.cloudinary.com/dqfqwre2q/image/upload/v1718218039/posifyme.png" alt="feedback-large-output" style="max-width:70%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
 </div>
 <br/>
 
