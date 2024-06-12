@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import {Component} from 'react'
+import Advanced from './Advanced.js'
 
 import Desplay from './Desplay.js'
 import {IoHomeOutline} from 'react-icons/io5'
@@ -42,17 +43,17 @@ class FirstRender extends Component {
     return (
       <div className="first-container-cols">
         <label htmlFor="one" className="twoIn">
-          One:
+          Chatbot Name:
         </label>
         <input type="text" id="one" className="oneIn" />
         <br />
         <label htmlFor="two" className="twoIn">
-          Two:
+          Welcome Message:
         </label>
         <input type="text" id="two" className="oneIn" />
         <br />
         <label htmlFor="three" className="twoIn">
-          Three:
+          Input Placeholder:
         </label>
         <input type="text" id="three" className="oneIn" />
       </div>
@@ -106,7 +107,7 @@ const WidgetConfig = () => {
       <div>
         {activeTab === 'general' && <FirstRender />}
         {activeTab === 'display' && <Desplay />}
-        {activeTab === 'advanced' && <h2>Advanced Content</h2>}
+        {activeTab === 'advanced' && <Advanced />}
       </div>
     </div>
   )

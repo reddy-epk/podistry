@@ -2,14 +2,14 @@ import React from 'react'
 import {useNavigate} from 'react-router-dom'
 import {FaPodcast} from 'react-icons/fa6'
 import Header from '../HeaderL'
-import './index.css'
+import './pindex.css'
 
 const Projects = () => {
   const navigate = useNavigate()
   const projectNames = JSON.parse(localStorage.getItem('projectNames')) || []
 
   const handleCardClick = () => {
-    navigate('/project-flow')
+    navigate('/creater')
   }
 
   return (
@@ -25,11 +25,7 @@ const Projects = () => {
         </div>
         <div className="projects-list-container">
           {projectNames.map((name, index) => (
-            <div
-              key={index}
-              className="card"
-              onClick={handleCardClick} // Add onClick event handler to the card
-            >
+            <div key={index} className="card" onClick={handleCardClick}>
               <div className="card-image"></div>
               <div className="card-content">
                 <div>

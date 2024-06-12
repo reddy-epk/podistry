@@ -1,0 +1,161 @@
+.sampty {
+  color: #7e22ce;
+}
+
+.mage-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px dotted greenyellow;
+  margin-top: 50px;
+  width: 80%;
+  height: 60%;
+  padding: 10px;
+  margin-left: 150px;
+  border-radius: 5px;
+}
+#nav-bary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 150px;
+}
+#route-iconsly {
+  display: flex;
+  align-items: center;
+  width: 200px;
+}
+.dropdownin {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.sample-texter {
+  color: #999999;
+  font-size: 16px;
+  font-weight: 500;
+}
+.home-iconey {
+  color: #7e22ce;
+  font-weight: bold;
+  font-size: 18px;
+}
+.slashbary {
+  color: #999999;
+  font-size: 18px;
+}
+#countri-icons {
+  display: flex;
+  align-items: center;
+  width: 145px;
+}
+.rowys {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+.fabelling {
+  font-size: 23px;
+  font-weight: bolder;
+  margin-left: 15px;
+}
+.fabell:hover {
+  color: #f5a84c;
+}
+
+.contentify {
+  background: linear-gradient(to right, #020024, #750979, #00d4ff);
+  -webkit-background-clip: text; /* For webkit browsers (Chrome and Safari) */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pronty {
+  border: none;
+  padding: none;
+  background-color: none;
+  color: red;
+  font-size: small;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  text-decoration: dashed;
+  cursor: hover;
+}
+
+.subscription {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 14px;
+  align-items: center;
+  border-radius: 8px;
+  gap: 5px;
+  height: 60px;
+  width: 100%;
+  background-image: linear-gradient(to right, #7c21cb, #6514ac, #470383);
+  color: white;
+  text-decoration: underline;
+}
+.subscription button {
+  color: #7e22ce;
+  background-color: white;
+  border-radius: 6px;
+  height: 30px;
+  width: 100px;
+  cursor: hover;
+}
+.subscription p {
+  font-family: roboto;
+  font-weight: bold;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+.user-info label {
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+}
+.user-info input {
+  width: 90%;
+  border: 2px solid #999999;
+  border-radius: 8px;
+  height: 20%;
+  margin-top: 5px;
+}
+.rounded-image {
+  border-radius: 50%;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%; /* Assuming the width of the image is 208px based on your description */
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.oklama {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}

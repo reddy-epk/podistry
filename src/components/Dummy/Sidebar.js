@@ -15,7 +15,7 @@ const Sidebar = ({selectedOption, handleOptionClick}) => {
         />
         <h1 className="lama-head">LAMA.</h1>
       </div>
-      <p>Podcast Update Flow</p>
+      <p id="p-flow">Podcast Update Flow</p>
       <div className="sidebar-top">
         <Link
           to="/project"
@@ -45,14 +45,14 @@ const Sidebar = ({selectedOption, handleOptionClick}) => {
       </div>
       <hr />
       <button
-        className={`circle-button ${
+        className={`spacer-button ${
           selectedOption === 'pricing' ? 'active' : ''
         }`}
         onClick={() => handleOptionClick('settings')}
       >
         <Link to="/settings" className="circle-button setting-button">
-          <IoSettingsOutline />
-          <span className="spacer">Settings</span>
+          <IoSettingsOutline id="on-setHover" />
+          <span>Settings</span>
         </Link>
       </button>
     </div>

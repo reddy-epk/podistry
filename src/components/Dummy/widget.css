@@ -4,11 +4,16 @@
   color: red;
 }
 .oneIn {
-  height: 45px;
+  height: 35px;
+  width: 80%;
+  border: 1px solid #7e22ce;
 }
 .twoIn {
   margin-top: 10px;
   margin-bottom: 10px;
+  color: #999999;
+  font-family: calibri;
+  font-weight: bold;
 }
 
 .matryfy {
@@ -93,6 +98,8 @@
   background-color: transparent;
   padding: none;
   position: relative;
+  margin-right: 10px;
+  font-size: 18px;
 }
 
 .button::after {
